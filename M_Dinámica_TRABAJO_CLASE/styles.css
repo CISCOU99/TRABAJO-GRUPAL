@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+/*SECCIÓN DE LA MAQUETACIÓN*/
+
+* {
+  /*QUITA TODOS LOS VALORES PREDETERMINADOS DE MARGIN Y PADDING DE LAS ETIQUETAS*/
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #11242b;
+}
+
+body {
+  width: 90%;
+  height: 1200px;
+  margin: auto;
+  background-color: #2b5b6c;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 250px;
+  background-color: #ece78d;
+}
+
+nav {
+  width: 100%;
+  height: 45px;
+  background-color: #2b5b6c;
+  padding-top: 5px;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > a {
+  color: white;
+  outline: none;
+}
+
+nav > a:hover {
+  border-bottom: 1px solid;
+  color: black;
+  background: #cdfeaa;
+}
+
+main {
+  width: 100%;
+  height: 900px;
+}
+
+section#banner {
+  width: 80%;
+  height: 250px;
+  float: left;
+  background-image: url(https://www.entornoturistico.com/wp-content/uploads/2017/04/Qu%C3%A9-son-los-centros-tur%C3%ADsticos-1280x720.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#logo {
+  width: 20%;
+  height: 125px;
+  float: left;
+  background-color: #a5ab59;
+  background-image: url(https://www.zarla.com/images/zarla-escpate-1x1-2400x2400-20210603-h6qr8xphp7xfp9vt4pwc.png?crop=1:1,smart&width=250&dpr=2);
+  background-size: 125px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#login {
+  width: 20%;
+  height: 125px;
+  float: left;
+  background-color: #ece78d;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+section#login > a {
+  width: 60%;
+  height: 40%;
+}
+
+section#login > a > input {
+  width: 100%;
+  height: 100%;
+  background-color: #738d59;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+section.container {
+  width: 100%;
+  height: 550px;
+  background-color: #56778d;
+}
+
+aside#left {
+  width: 20%;
+  height: 350px;
+  background-color: #fbf7e9;
+  float: left;
+  background-image: url(img/ofertas.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+article#articulo {
+  width: 50%;
+  height: 250px;
+  background-color: #8bb6c6;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 2% 4% 2% 4%;
+}
+
+article#articulo > h1 {
+  text-align: center;
+}
+
+article#articulo > p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+aside#right {
+  width: 20%;
+  height: 350px;
+  background-color: #77898d;
+  float: left;
+  background-image: url(img/anuncio.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #738d59;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*SECCIÓN DE LAS CARTAS EXPANDIBLES*/
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/*SECCIÓN DEL FORMULARIO*/
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish");
+
+#body_form {
+  width: 90%;
+  height: 660px;
+}
+
+#main_form {
+  width: 90%;
+  height: 400px;
+}
+
+.container_form {
+  margin: 10px 10px 10px 10px;
+  width: 30%;
+  background-color: #fff;
+  color: #aaa;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container_form h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #ed2553;
+  letter-spacing: 3px;
+}
+
+.container_form a {
+  text-decoration: none;
+  color: #ed2553;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 2px;
+
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  background: #ed2553;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #aaa;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: none;
+  border-bottom: 3px solid #ddd;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  transform: translateY(-30px);
+}

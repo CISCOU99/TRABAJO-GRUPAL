@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login wave</title>
+  </head>
+  <body id="body_form">
+    <header>
+      <section id="banner"></section>
+      <section id="logo"></section>
+      <section id="current_date"></p>
+        <script>
+            document.getElementById("current_date").innerHTML = Date();
+        </script>
+      </section>
+    </header>
+    <center>
+    <main id="main_form">
+      <section class="container_form">
+        <h1>Ingreso de usuario</h1>
+        <form>
+          <div class="form-control">
+            <input type="text" required />
+            <label>Correo electrónico</label>
+          </div>
+
+          <div class="form-control">
+            <input type="password" required />
+            <label>Contraseña</label>
+          </div>
+
+          <a href="otro.html"
+            ><input class="btn" value="Ingresar"
+          /></a>
+          <p class="text">¿No tienes una cuenta? <a href="#">Regístrate</a></p>
+        </form>
+      </section>
+    </center>
+
+    <script src="script.js"></script>
+
+    </main>
+    <footer>
+      <p align="center">
+        AgenciaViajesEcuador S.A. Todos los derechos reservados. Certificado de
+        Registro de Turismo N° PU3894-00008737. LUAE N° 2034EBLUAE852638
+      </p>
+    </footer>
+  </body>
+</html>
